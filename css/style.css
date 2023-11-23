@@ -10,7 +10,60 @@ body{
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-.container{
+.container-big{
     max-width: 1200px;
     margin: 0 auto;
+}
+.container-small{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    gap: 40px;
+}
+
+.btn{
+    background-color: #0061FF;
+    color: white;
+    padding: 10px 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: #4E4E4E;
+}
+
+
+/* header */
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+/* nav-header */
+.nav-header{
+    justify-content: space-between;
+    padding-right: 20px;
+    height: 80px;
+    align-items: center;
+}
+
+header ul{
+    list-style-type: none;
+}   
+
+
+
+.nav-left{
+    align-items: center;
+}
+
+/* jumbotron */
+
+.jumbotron{
+    background-color: #B4D0E7;
+    height: 100px;
 }
