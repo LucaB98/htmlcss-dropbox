@@ -11,7 +11,7 @@ body{
 }
 
 .container-big{
-    max-width: 1080px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .container-small{
@@ -19,6 +19,9 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
 
 .btn{
     padding: 10px 20px;
@@ -38,6 +41,14 @@ ul{
     list-style-type: none;
 }
 
+ul li{
+    background-position: 0 0;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    line-height: 20px;
+    padding-left: 25px;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -53,8 +64,33 @@ a{
     flex-basis: 30%;
 }
 
+.row > .col-50{
+    flex-basis: 50%;
+}
+
 .row > .col-70{
     flex-basis: 70%;
+}
+
+
+.m-30-20{
+    margin: 30px 20px;
+}
+
+.mtb-10{
+    margin: 10px 0;
+}
+
+.mtb-20{
+    margin: 20px 0;
+}
+
+.mtb-40{
+    margin: 40px 0;
+}
+
+.ml-10{
+    margin-left: 10px;
 }
 
 .mb-30{
@@ -62,6 +98,14 @@ a{
 }
 .mb-50{
     margin-bottom: 50px;
+}
+
+.ptb-10{
+    padding: 10px 0;
+}
+
+.txt-alg-right{
+    text-align: right;
 }
 
 img{
@@ -81,6 +125,10 @@ img{
     width: 20px;
     border-radius: 50%;
     border: 1px solid #b9b9b9;
+}
+
+.box > *{
+    margin: 10px 0;
 }
 
 .invoice{
@@ -103,6 +151,7 @@ img{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 
     display: flex;
     align-items: center;
@@ -146,16 +195,45 @@ img{
 
 /* main */
 
-.row .cols-3 > .col{
-    flex-basis: calc(100 / 3);
+
+
+.row.cols-3 > .col{
+    flex-basis: calc(100% / 3);
 }
 
-ul li{
-    background-position: 0 0;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    padding: ;
-    line-height: 20px;
+.row.cols-3 {
+    margin: 0 -20px;
+}
+
+.col{
+    padding: 0 10px;
+}
+
+.col-full{
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.card-full{
+    border: 1px solid grey;
+}
+
+.col-full .row > .col-50{
+    padding: 40px;
+}
+
+.card{
+    border: 1px solid grey;
+    height: 800px;
+}
+
+.card-header{
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.card li{
+    margin: 12px;
 }
 
 ul .user{
@@ -176,6 +254,10 @@ ul .share{
 
 .advantages > *{
     margin: 20px 0;
+}
+
+.soluction{
+    padding-top: 40px;
 }
 
 ul .check{
