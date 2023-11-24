@@ -64,8 +64,16 @@ a{
     flex-basis: 30%;
 }
 
+.row > .col-40{
+    flex-basis: 40%;
+}
+
 .row > .col-50{
     flex-basis: 50%;
+}
+
+.row > .col-60{
+    flex-basis: 60%;
 }
 
 .row > .col-70{
@@ -89,8 +97,20 @@ a{
     margin: 40px 0;
 }
 
+.mtb-60{
+    margin: 60px 0;
+}
+
+.mtb-100{
+    margin: 100px 0;
+}
+
 .ml-10{
     margin-left: 10px;
+}
+
+.ml-30{
+    margin-left: 30px;
 }
 
 .mb-30{
@@ -103,6 +123,7 @@ a{
 .ptb-10{
     padding: 10px 0;
 }
+
 
 .txt-alg-right{
     text-align: right;
@@ -270,4 +291,8 @@ ul .users{
 
 .advantages h3{
     font-size: 16px;
+}
+
+.btn-partner{
+    border: 1px solid;
 }
