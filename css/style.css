@@ -23,10 +23,17 @@ body{
     display: flex;
 }
 
+
+
 .btn{
     padding: 10px 20px;
     display: inline-block;
     background-color: white;
+}
+
+.btn:hover,
+.btn-small:hover{
+    opacity: 0.5;
 }
 
 .btn-small{
@@ -227,21 +234,6 @@ img{
 
 /* main */
 
-.services li{
-    background-position: 0 0;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    line-height: 20px;
-    padding-left: 25px;
-}
-
-.advantages li{
-    background-position: 0 0;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    line-height: 20px;
-    padding-left: 25px;
-}
 
 .row.cols-2 > .col{
     flex-basis: calc(100% / 2);
@@ -285,41 +277,13 @@ img{
     border-bottom: 1px solid grey;
 }
 
-.card li{
-    margin: 12px;
+.fa-ul{
+
 }
 
-ul .user{
-    background-image: url(../img/user-solid.svg);
-}
 
-ul .folder{
-    background-image: url(../img/folder-solid.svg);
-}
 
-ul .share{
-    background-image: url(../img/share-nodes-solid.svg);
-}
 
-.shop-now{
-    padding: 30px 0;
-}
-
-.advantages > *{
-    margin: 20px 0;
-}
-
-.soluction{
-    padding-top: 40px;
-}
-
-ul .check{
-    background-image: url(../img/check-solid\ \(1\).svg);  
-}
-
-ul .users{
-    background-image: url(../img/users-solid.svg);  
-}
 
 .advantages h3{
     font-size: 16px;
@@ -343,28 +307,35 @@ ul .users{
     color: blue;
 }
 
-.card img{
-    line-height: 100%;
-    height: 150px;
-    width: 150px;
-
-    position: absolute;
-    top: 50%;
-    right: 50%;
-
-    translate: 50% -50%;
+#team{
+    display: flex;
 }
 
-.card{
-    height: 287px;
-    text-align: center;
-    filter:invert(1);
+.big-box{
+    width: calc(100vw /3);
+    height: calc(100vw /3);
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.small-box{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.card .florida{
-    height: 30px;
-    width: 150px;
+    border: 15px solid transparent;
+}
+
+.small-box:hover{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.small-box img{
+    width: 50%;
+    filter: invert(1)
 }
 
 
